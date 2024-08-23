@@ -25,6 +25,7 @@
 <style>
     .font-manrope{
         font-family: "Manrope", sans-serif;
+        
     }
 
 </style>
@@ -232,8 +233,8 @@
 
        </main>
        <!-- part 3 -->
-       <section class="bg-[#FFFFFF]">
-               <div class="lg:max-w-6xl  mx-auto sm:max-w-full   mt-9 ">
+       <section class="bg-[#FFFFFF] lg:max-w-screen-full sm:w-screen-full">
+               <div class="lg:max-w-6xl sm:max-w-72   mx-auto sm:max-w-full   mt-9 ">
                 <!-- text -->
                 
                 <div class="text-center py-8 lg:py-20">
@@ -248,8 +249,8 @@
               
               <!-- grid -->
               <div class="">
-                <div class="flex gap-4">
-                  <div class="flex-initial w-[772px]  border  rounded-xl">
+                <div class="lg:flex gap-4">
+                  <div class="flex-initial lg:w-[772px] sm: w-[274px]  border  rounded-xl">
                    <div class="  ">
                      <div class="hero-content flex-col lg:flex-row">
                       <img
@@ -272,17 +273,21 @@
                    </div>
                  </div>
                </div>
-               <div class="flex-initial w-[374px]  border  rounded-xl">
-                 <img class="max-w-80 rounded-lg m-auto py-5 " src="images/img2.png" alt="">
+               <div class="flex-initial lg:w-[374px] sm:w-[274px]  border  rounded-xl">
+                 <img class="lg:max-w-80 sm:max-w-56  rounded-lg m-auto py-5 " src="images/img2.png" alt="">
                </div>
+               <!-- hidden -->
+               <div class="flex-initial w-[274px] lg:hidden  border  rounded-xl">
+                <img class="max-w-56 rounded-lg m-auto py-5 " src="images/img5.png" alt="">
+                </div>
                
              </div>
              <!-- part 2 -->
-             <div class="flex mt-5 gap-4">
+             <div class="lg:flex mt-5 gap-4">
               <div class="flex-initial w-[274px]  border  rounded-xl">
                 <img class="max-w-56 rounded-lg m-auto py-5 " src="images/img3.png" alt="">
               </div>
-              <div class="flex-initial w-[573px]  border  rounded-xl">
+              <div class="flex-initial lg:w-[573px] sm: sm:w-[274px]  border  rounded-xl">
                 <div class="  ">
                   <div class="hero-content flex-col lg:flex-row">
                    <img
@@ -305,11 +310,48 @@
               </div>
             </div>
             <div class="flex-initial w-[274px]  border  rounded-xl">
-              <img class="max-w-56 rounded-lg m-auto py-5 " src="images/img5.png" alt="">
+              <img class="lg:max-w-56  rounded-lg m-auto py-5 " src="images/img5.png" alt="">
             </div>
              </div>
               </div>
        </section>
+
+       <!-- part 5 -->
+        <section class="bg-[url('../images/bg.jpg')] bg-no-repeat bg-cover mt-10">
+          <div>
+            <!-- text -->
+            <div class="text-center py-8 lg:py-20 sm:max-w-[470px] sm:m-auto">
+              <a class="btn bg-[#acef5f46] mb-5 text-font-color font-bold text-1 rounded-3xl"> 
+                <i class="fa-solid  fa-arrow-right  text-font-color"></i>Let's Connect</a>
+                 <h1 class="font-bold mb-5 lg:text-4xl sm:text-5xl">Let's Discuss Next Project</h1>
+                 <p class="text-1 mb-5 font-medium text-font-color">The barn house captivates with its blend of rustic 
+                  charm and modern sophistication, <br>
+                  featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <!-- from -->
+            <div class="grid lg:grid-cols-2 grid-rows-5 sm:grid-cols-1   lg:max-w-[970px] sm:max-w-[470px] m-auto gap-5">
+              <input  type="text" placeholder="First Name*" class="input rounded-3xl " required />
+              <input type="text" placeholder="Last Name*" class="input rounded-3xl" required />
+              <input  type="text" placeholder="Phone Number*" class="input rounded-3xl " required />
+              <input type="email" placeholder="Email Number*" class="input rounded-3xl" required />
+              <textarea placeholder="Write your message here"
+                    class="textarea lg:col-span-2 row-span-3 rounded-3xl"></textarea>
+
+                    <a class="btn font-extrabold text-[20px]  bg-button-color rounded-3xl lg:col-span-2">Book Consult 
+                      <button class="btn rounded-full text-white bg-black">
+                          <i class="fa-solid fa-arrow-right -rotate-45"></i></button></a>
+
+              
+                                    
+            
+            
+
+            </div>
+
+          </div>
+          </section>
+         
+         
 
 </body>
 </html>
